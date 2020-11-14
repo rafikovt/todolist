@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>TODO_LIST</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"></content>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+      crossorigin="anonymous">
+    <script defer src="./todoApp.js"></script>  
+    <script>
+      document.addEventListener(`DOMContentLoaded`, () => {
+        window.todoApp.createTodoApp(document.querySelector(`#todo-app`), `Мои дела`, `items`);
+      })
+    </script>
+</head>
+<body>
+  <div class="container mb5">
+    <nav class="nav">
+        <a class="nav-link" href="index.html">Мои дела</a>
+        <a class="nav-link" href="alsu.html">Дела Алсу</a>
+    </nav>
+  </div>
+  <div id="todo-app" class="container"></div>
+</body>
+</html>
